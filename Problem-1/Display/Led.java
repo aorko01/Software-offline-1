@@ -1,7 +1,8 @@
 package Display;
 
 public class Led implements Display {
-    public String returnDisplay() {
-        return "Led display";
+    @Override
+    public void returnDisplay() {
+        System.out.println("Led display is displaying the device");
     }
 }

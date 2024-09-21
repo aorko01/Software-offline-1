@@ -1,7 +1,8 @@
 package Identification;
 
 public class RFID implements Identification {
-    public String returnidentify() {
-        return "RFID identification";
+    @Override
+    public void identify() {
+        System.out.println("RFID identification is being used");
     }
 }

@@ -3,7 +3,7 @@ import java.util.Scanner;
 import PackageBuilder.*;
 import Internet.*;
 import WebServer.*;
-import Payment.*;
+import Payments.*;
 
 
 
@@ -29,7 +29,7 @@ public class Main {
                     packageFactory = new StandardPackageBuilder();
                     break;
                 case 3:
-                    packageFactory = new AdvancedPackageBuilder()
+                    packageFactory = new AdvancedPackageBuilder();
                     break;
                 case 4:
                     packageFactory = new PremiumPackageBuilder();
@@ -81,7 +81,7 @@ public class Main {
                     webServer = new Django();
                     break;
                 case 2:
-                    webServer = new nodejs();
+                    webServer = new Nodejs();
                     break;
                 case 3:
                     webServer = new Ruby();
@@ -152,6 +152,9 @@ public class Main {
                     return;
             }
 
+            Cash cash = new Cash();
+            cash.makePayment();
+
 
             
                 
@@ -161,7 +164,6 @@ public class Main {
         }finally{
             sc.close();
         }
-       
     }
     
 }

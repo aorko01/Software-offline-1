@@ -1,3 +1,4 @@
+package PackageBuilder;
 import Microcontroller.RasberryPi;
 import Identification.NFC;
 import Display.TouchScreen;
@@ -16,25 +17,30 @@ public class PremiumPackageBuilder implements PackageBuilder {
     @Override
     public void createMicrocontroller() {
         raspberryPi = new RasberryPi();
+        raspberryPi.control();
     }
 
     @Override
     public void createDisplay() {
         touchScreen = new TouchScreen();
+        touchScreen.returnDisplay();
     }
 
     @Override
     public void createIdentification() {
         nfc = new NFC();
+        nfc.identify();
     }
 
     @Override
     public void createStorage() {
         builtIn = new BuiltIn();
+        builtIn.createStorage();
     }
 
     @Override
     public void createController() {
         touch = new Touch();
+        touch.control();
     }
 }

@@ -1,8 +1,7 @@
 package Microcontroller;
 
 public class AtMega_32 implements MicroController {
-    public String controlMicroController() {
-        return "AtMega_32 control";
+    public void control() {
+        System.out.println("AtMega_32 is the microcontroller");
     }
-    
 }

@@ -1,5 +1,5 @@
 package Microcontroller;
 
 public interface MicroController {
-    String controlMicroController();
+    void control();
 }

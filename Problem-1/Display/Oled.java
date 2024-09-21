@@ -1,7 +1,8 @@
 package Display;
 
 public class Oled implements Display {
-    public String returnDisplay() {
-        return "Oled display";
+    @Override
+    public void returnDisplay() {
+        System.out.println("Oled display is displaying the device");
     }
 }

@@ -1,7 +1,8 @@
 package Controller;
 
 public class Separate implements Controller {
-    public String returncontrol() {
-        return "Separate controller";
+    @Override
+    public void control() {
+        System.out.println("Separate controller is controlling the device");
     }
 }

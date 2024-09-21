@@ -1,7 +1,8 @@
 package Payments;
 
 public class Cash implements Payment {
-    public String makePayment() {
-        return "Cash payment";
+    @Override
+    public void makePayment() {
+        System.out.println("Cash payment is being used");
     }
 }

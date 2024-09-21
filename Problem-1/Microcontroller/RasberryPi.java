@@ -1,7 +1,7 @@
 package Microcontroller;
 
 public class RasberryPi implements MicroController {
-    public String controlMicroController() {
-        return "RasberryPi control";
+    public void control() {
+        System.out.println("RasberryPi is the microcontroller");
     }
 }

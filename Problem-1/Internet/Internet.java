@@ -1,5 +1,5 @@
 package Internet;
 
 public interface Internet {
-    String makeInternetConnection();
+    void makeInternetConnection();
 }

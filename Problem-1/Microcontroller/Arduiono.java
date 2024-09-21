@@ -1,8 +1,7 @@
 package Microcontroller;
 
 public class Arduiono implements MicroController {
-    public String controlMicroController() {
-        return "Arduino control";
+    public void control() {
+        System.out.println("Arduino is the microcontroller");
     }
-    
 }

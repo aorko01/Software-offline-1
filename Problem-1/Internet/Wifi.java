@@ -1,7 +1,7 @@
 package Internet;
 
 public class Wifi implements Internet {
-    public String makeInternetConnection() {
-        return "Wifi connection";
+    public void makeInternetConnection() {
+        System.out.println("Making internet connection through Wifi");
     }
 }

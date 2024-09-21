@@ -1,7 +1,8 @@
 package Controller;
 
 public class Touch implements Controller {
-    public String returncontrol() {
-        return "Touch controller";
+    @Override
+    public void control() {
+        System.out.println("Touch controller is controlling the device");
     }
 }

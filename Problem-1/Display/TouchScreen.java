@@ -1,7 +1,8 @@
 package Display;
 
 public class TouchScreen implements Display {
-    public String returnDisplay() {
-        return "TouchScreen display";
+    @Override
+    public void returnDisplay() {
+        System.out.println("TouchScreen display is displaying the device");
     }
 }
