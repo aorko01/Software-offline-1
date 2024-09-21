@@ -9,22 +9,18 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Get customer type input
         System.out.println("Enter customer type (Regular, Premium, VIP): ");
         String customerType = scanner.nextLine();
 
-        // Get operation input
         System.out.println("Enter operation type (Loan, Account): ");
         String operationType = scanner.nextLine();
 
-        // Get principal and years
         System.out.println("Enter principal amount: ");
         double principal = scanner.nextDouble();
 
         System.out.println("Enter number of years: ");
         int years = scanner.nextInt();
 
-        // Create appropriate factory based on customer type
         BankFactory factory = null;
 
         switch (customerType.toLowerCase()) {
@@ -42,7 +38,6 @@ public class Main {
                 return;
         }
 
-        // Calculate interest based on operation type
         Operation operation = null;
 
         if (operationType.equalsIgnoreCase("loan")) {
